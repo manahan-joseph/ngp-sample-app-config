@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: ngp-sample-app
-        image: ultralazer2/ngp-sample-app:1.0
+        image: ultralazer2/ngp-sample-app:1.1
         ports:
         - containerPort: 8989
