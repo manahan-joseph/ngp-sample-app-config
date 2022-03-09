@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/manahan-joseph/ngp-sample-app-config.git
-    targetRevision: HEAD
+    targetRevision: deploy
     path: dev
   destination:
     server: https://kubernetes.default.svc
