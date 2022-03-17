@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ngp-sample-app-deployment
+spec:
+  selector:
+    matchLabels:
+      app: ngp-sample-app
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: ngp-sample-app
+    spec:
+      containers:
+      - name: ngp-sample-app
+        image: ultralazer2/ngp-sample-app:1.2
+        ports:
+        - containerPort: 8989
